@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&family=Outfit:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* card  */
+.card{
+    height: 61vh;
+    width: 81vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.card-image{
+    height: 100%;
+    width: 50%;
+    background: url("images/image-product-desktop.jpg");
+    background-size: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.card-content{
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: "Fraunces";
+    border-radius: 0 20px 20px 0;
+}
+.card-header{
+    padding-right: 20px;
+}
+.card-header .card-header-top{
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+
+}
+.card-details{
+    font-family: "Montserrat";
+    text-align: justify;
+}
+.card-price{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.discount-price{
+    color: #3D8168;
+}
+.real-price{
+    text-decoration:line-through;
+}
+.card-btn{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3D8168;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.add-to-cart-btn{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+.attribution{
+    position: absolute;
+    bottom: 10%;
+}
+
+@media (max-width:768px) {
+    body{
+        padding: 10px;
+    }
+    .card{
+        height: 85vh;
+        width: 80%;
+        flex-direction: column;
+    }
+    .card-image{
+        height: 40%;
+        width: 100%;
+        padding: 0;
+        background: url("images/image-product-mobile.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+    .card-content{
+        height: 60%;
+        width: 100%;
+        border-radius: 0 0 20px 20px ;
+    }
+    .attribution{
+        bottom: 3%;
+    }
+}
