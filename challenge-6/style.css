@@ -25,8 +25,8 @@ body{
 }
 
 .container{
-    height: 50vh;
-    width: 700px;
+    height: 65vh;
+    width: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +40,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    padding: 10px 20px;
+    padding: 40px;
     color: var(--priamryColor);
 }
 .box:nth-child(1){
@@ -61,10 +61,12 @@ body{
     height: 5%;
     font-family: var(--boxHeaderTxt);
     text-transform: uppercase;
+    font-size: 1.8rem;
 }
 .box-body{
     padding-right: 10px;
     font-weight: 400;
+    font-size: 1.2rem;
     opacity: 0.7;
 }
 .box-footer{
@@ -74,9 +76,10 @@ body{
     margin-top: 30px;
 }
 .box-footer button{
-    padding: 10px 30px;
+    padding: 15px 40px;
     border: none;
     border-radius: 20px;
+    font-size: 1.2rem;
     font-weight: 700;
     cursor: pointer;
 }
