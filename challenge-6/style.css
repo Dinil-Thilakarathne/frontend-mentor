@@ -93,6 +93,10 @@ body{
     color: var(--box3Color);
 }
 
+.attribution{
+    position: absolute;
+    bottom: 2%;
+}
 
 /* for mobile screen  */
 @media (max-width:768px) {
