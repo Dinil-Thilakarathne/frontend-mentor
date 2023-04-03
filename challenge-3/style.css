@@ -18,6 +18,8 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #cbd3f2;
+    background: url(images/pattern-background-desktop.svg), #e1e9ff;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .card{
