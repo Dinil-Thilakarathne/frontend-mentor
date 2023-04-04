@@ -78,37 +78,37 @@ body{
 }
 
 .card-1 .card-image{
-    background-image: url(projects-img/challenge-1.png);
+    background-image: url("projects-img/challenge-1.png");
     background-size: contain;
     background-repeat: no-repeat ;
 }
 .card-2 .card-image{
-    background-image: url(projects-img/challenge-2.png);
+    background-image: url("projects-img/challenge-2.png");
     background-size: contain;
     background-repeat: no-repeat ;
 }
 .card-3 .card-image{
-    background-image: url(projects-img/challenge-3.png);
+    background-image: url("projects-img/challenge-3.png");
     background-size: contain;
     background-repeat: no-repeat ;
 }
 .card-4 .card-image{
-    background-image: url(projects-img/challenge-4.png);
+    background-image: url("projects-img/challenge-4.png");
     background-size: contain;
     background-repeat: no-repeat ;
 }
 .card-5 .card-image{
-    background-image: url(projects-img/challenge-5.png);
+    background-image: url("projects-img/challenge-5.png");
     background-size: contain;
     background-repeat: no-repeat ;
 }
 .card-6 .card-image{
-    background-image: url(projects-img/challenge-6.png);
+    background-image: url("projects-img/challenge-6.png");
     background-size: contain;
     background-repeat: no-repeat ;
 }
 .card-7 .card-image{
-    background-image: url(projects-img/challenge-7.png);
+    background-image: url("projects-img/challenge-7.png");
     background-size: contain;
     background-repeat: no-repeat ;
 }
