@@ -119,7 +119,15 @@ body{
     text-align: center;
 }
 
-
+.attribution{
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+}
+.attribution a{
+    color: var(--primaryColor);
+    text-decoration: none;
+}
 @media (max-width:768px) {
     .card{
         width: 350px;
