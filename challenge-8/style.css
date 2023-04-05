@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: hsl(25, 97%, 53%);
+    --mainTxtColor: hsl(0, 0%, 100%);
+    --cardBodyTxtColor: hsl(217, 12%, 63%);
+    --cardBgColor-1: hsl(216, 12%, 54%);
+    --cardBgColor-2: hsl(213, 19%, 18%);
+    --bgColor: hsl(216, 12%, 8%);
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "overpass";
+}
+
+.card{
+    height: 400px;
+    width: 400px;
+    background: radial-gradient(circle at center top, hsl(213, 19%, 18%) 5% , hsl(213, 19%, 18%,0.2)); 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px 40px;
+}
+.card-top{
+    height: 50px;
+    width: 50px;
+    background-color: var(--cardBgColor-2);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-header-section{
+    color: var(--mainTxtColor)
+}
+.card-body-section{
+    color: var(--cardBodyTxtColor);
+}
+.card-rating-section {
+    height: 20%;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-rating-section div{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--cardBgColor-2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cardBodyTxtColor);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.card-rating-section div.active{
+    background-color: var(--primaryColor);
+    color: var(--mainTxtColor);
+}
+.card-footer{
+    height: 15%;
+    width: 100%;
+}
+.card-footer button{
+    height: 100%;
+    width: 100%;
+    background-color: var(--primaryColor);
+    border-radius: 100px;
+    color: var(--mainTxtColor);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.card-footer button:hover{
+    background-color: var(--mainTxtColor);
+    color: var(--primaryColor);
+}
+
+.card.thankyou-card{
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+.thankyou-card .card-img{
+    height: 30%;
+    width: 100%;
+    text-align: center;
+}
+.thankyou-card .rating-msg-section{
+    height: 10%;
+    width: 80%;
+    background-color: var(--cardBgColor-2);
+    padding: 10px ;
+    text-align: center;
+    border-radius: 100px;
+    color: var(--primaryColor);
+}
+
+.thankyou-card .card-body-section{
+    text-align: center;
+}
+
+
+@media (max-width:768px) {
+    .card{
+        width: 350px;
+        padding: 20px;
+    }
+}
