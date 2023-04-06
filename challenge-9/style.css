@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainTxtColor:#502050;
+    --secondaryTxtColor:#937b92;
+    --cardBgColor:#502050;
+    --cardMainTxt:#fff;
+    --cardSecondaryTxt:	#ee68a4;
+    --ratingBoxBgColor:	#f7f2f7;
+
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'League Spartan', sans-serif;
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+    background-position: top left, bottom ;
+    background-repeat: no-repeat;
+}
+
+.hero-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 140px;
+}
+.hero-content-section{
+    height: 50%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 100px 10px;
+}
+.content-msg-section{
+    height: 100%;
+    width: 40%;
+    padding: 0 20px;
+}
+
+.content-msg-header{
+    font-size: 4rem;
+    padding-right:50%;
+    color: var(--mainTxtColor);
+}
+.content-msg-body{
+    padding-top: 20px;
+    font-size: 1.5rem;
+    color: var(--secondaryTxtColor);
+    line-height: 1.5;
+}
+
+.rating-box-section{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.rating-box{
+    height: 60px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--ratingBoxBgColor);
+    border-radius: 10px;
+    padding: 0 50px;
+}
+.rating-star-box{
+    height: 100%;
+    width: 30%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.rating-box-section div:nth-child(1){
+    margin-right: 100px;
+}
+.rating-box-section div:nth-child(2){
+    margin-right: 50px;
+}
+.rating-box h3{
+    color: var(--mainTxtColor);
+    font-size: 1.3rem;
+}
+
+/* card style  */
+.hero-card-section{
+    height: 50%;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    height: 70%;
+    width: calc(100%  / 3.2);
+    background-color: var(--cardBgColor);
+    padding: 40px 50px;
+    border-radius: 10px;
+}
+.card.card-2{
+    margin-top: 50px;
+}
+.card.card-3{
+    margin-top: 100px;
+}
+.card-top{
+    display: inline-flex;
+    align-items: center;
+}
+
+.profile-pic img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.profile-info{
+    padding-left :20px ;
+}
+.profile-name{
+    color: var(--cardMainTxt);
+    
+}
+.verified{
+    color: var(--cardSecondaryTxt);
+}
+
+.card-body .body-msg{
+    color: var(--cardMainTxt);
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-top: 20px;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width:768px) {
+    body{
+        background-image: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg');
+        background-position: top left, bottom ;
+        background-repeat: no-repeat;
+    }
+    .hero-section{
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+
+    }
+    .hero-content-section{
+        height: calc(100vh - 40px);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    .content-msg-section{
+        height: 50%;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .content-msg-header{
+        font-size: 2.5rem;
+        text-align: center;
+        padding-right: 0;
+        padding: 0 20px;
+    }
+    .rating-box-section{
+        height:50%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .rating-box{
+        height: 100px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .rating-box-section div:nth-child(1),.rating-box-section div:nth-child(2){
+        margin-right: 0px;
+    }
+
+    .hero-card-section{
+        height: calc(100vh - 20px);
+        flex-direction: column;
+        padding: 10px;
+    }
+    .card{
+        height: calc(100% / 3.1);
+        width: 100%;
+        padding: 10px;
+    }
+    .card-top{
+        padding: 20px;
+    }
+    .card-body .body-msg{
+        font-size: 1rem;
+        padding-top: 0;
+        padding: 0 10px ;
+        letter-spacing: 1;
+    }
+    .card.card-2,
+    .card.card-3{
+        margin-top: 0;
+    }
+}
