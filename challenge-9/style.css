@@ -22,6 +22,7 @@ body{
     background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
     background-position: top left, bottom ;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .hero-section{
@@ -32,28 +33,27 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 40px 140px;
+    position: relative;
 }
 .hero-content-section{
-    height: 50%;
+    height: 45%;
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
-    padding: 100px 10px;
+    padding: 40px 10px;
 }
 .content-msg-section{
     height: 100%;
     width: 40%;
-    padding: 0 20px;
 }
 
 .content-msg-header{
-    font-size: 4rem;
-    padding-right:50%;
+    font-size: 3.5rem;
     color: var(--mainTxtColor);
 }
 .content-msg-body{
     padding-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--secondaryTxtColor);
     line-height: 1.5;
 }
@@ -140,12 +140,23 @@ body{
 
 .card-body .body-msg{
     color: var(--cardMainTxt);
-    font-size: 1.3rem;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.1;
     padding-top: 20px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
-
+.attribution{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.attribution a{
+    text-decoration: none;
+    color: var(--cardSecondaryTxt);
+}
 @media (max-width:768px) {
     body{
         background-image: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg');
@@ -219,5 +230,8 @@ body{
     .card.card-2,
     .card.card-3{
         margin-top: 0;
+    }
+    .attribution {
+        font-size: 0.9rem;
     }
 }
