@@ -122,6 +122,11 @@ body{
     background-size: contain;
     background-repeat: no-repeat ;
 }
+.card-10 .card-image{
+    background-image: url("projects-img/challenge-10.png");
+    background-size: contain;
+    background-repeat: no-repeat ;
+}
 
 
 .container:hover .card-image{
