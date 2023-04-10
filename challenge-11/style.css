@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    /* colors  */
+    --bgColor:hsl(0,0,100%);
+    --cardBgColor:hsl(0,0,100%);
+    --cardShadowColor:hsl(229, 6%, 66%);
+    --card1Border : hsl(180, 62%, 55%);
+    --card2Border : hsl(0, 78%, 62%);
+    --card3Border : hsl(34, 97%, 64%);
+    --card4Border : hsl(212, 86%, 64%);
+
+    /* text  */
+    --fc-header-header-top:hsl(0, 0%, 48%);
+    --fc-header-header-bottom:hsl(0, 0%, 0%);
+    --fc-header-description:hsl(0, 0%, 48%);
+    --fc-card-header:hsl(0, 0%, 0%);
+    --fc-card-description:hsl(0, 0%, 48%);
+    --fs-header:40px;
+    --fs-header-description:15px;
+    --fs-card-header:20px;
+    --fs-card-description:15px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Poppins";
+    background-color: var(--bgColor);
+    position: relative;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 140px;
+    
+}
+
+.container header{
+    height: 160px;
+    width: 100%;
+    text-align: center;
+}
+
+header .header-top{
+    font-weight: 200;
+    columns: var(--fc-header-header-top);
+    font-size: var(--fs-header);
+}
+header .header-bottom{
+    font-weight: 600;
+    color: var(--fc-header-header-bottom);
+    font-size: var(--fs-header);
+}
+header .header-description{
+    font-weight: 400;
+    color: var(--fc-header-description);
+    padding: 0 30%;
+}
+
+.card-section{
+    height: calc(100vh - 240px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-group{
+    height: 100%;
+    width: calc(100% / 3.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.card-group:nth-child(2){
+    justify-content: space-around;
+}
+.card{
+    height: 45%;
+    width: 100%;
+    background-color: var(--cardBgColor);
+    box-shadow: 5px 5px 10px var(--cardShadowColor);
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+}
+.card-1{
+    border-top: 5px solid var(--card1Border);
+}
+.card-2{
+    border-top: 5px solid var(--card2Border);
+}
+.card-3{
+    border-top: 5px solid var(--card3Border);
+}
+.card-4{
+    border-top: 5px solid var(--card4Border);
+}
+.card-header{
+    color: var(--fc-card-header);
+    font-size: var(--fs-card-header);
+}
+.card-description{
+    color: var(--fc-card-description);
+    font-size: var(--fs-card-description);
+}
+.card-image{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+
+@media (max-width:768px) {
+    :root{
+        /* text  */
+        --fs-header:30px;
+        --fs-header-description:10px;
+        --fs-card-header:20px;
+        --fs-card-description:15px;
+    }
+    .container{
+        padding: 10px ;
+    }
+    header{
+        height: 200px;
+        width: 100%;
+    }
+    header .header-description{
+        padding: 0 10px;
+    }
+    .card-section{
+        min-height: calc(50vh * 4);
+        flex-direction: column;
+    }
+    .card-group{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .card{
+        height: 40vh;
+        width: 100%;
+    }
+    .card-group:nth-child(2){
+        min-height: 90vh;
+        justify-content: space-between;
+    }
+    footer{
+        padding: 0 10px;
+    }
+}
