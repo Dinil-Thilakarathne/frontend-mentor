@@ -203,10 +203,7 @@ ul li a{
 }
 .content-client img{
     opacity: 1;
-    /* opacity: 0;
-    transform: translateX(-100%) , scale(0);
-    -webkit-transform: translateX(-100%);
-    transition: all 1s ease; */
+
 }
 
 /* hero image  */
