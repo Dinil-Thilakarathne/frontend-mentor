@@ -50,12 +50,12 @@ subMenuIcons.forEach((icon, index) => {
 
 
 // hero client img loader 
-images.forEach((image, index) => {
-    /* Add a delay to each image to make it appear after the previous one */
-    const delay = index * 1000;
+// images.forEach((image, index) => {
+//     /* Add a delay to each image to make it appear after the previous one */
+//     const delay = index * 1000;
   
-    setTimeout(() => {
-      image.style.opacity = 1;
-      image.style.transform = "translateY(0)";
-    }, delay);
-});
+//     setTimeout(() => {
+//       image.style.opacity = 1;
+//       image.style.transform = "translateY(0)";
+//     }, delay);
+// });
