@@ -40,6 +40,7 @@ body{
     min-height: 100vh;
     width: 100%;
     font-family: var(--main-font-family);
+    position: relative;
 }
 
 /* 
@@ -201,10 +202,11 @@ ul li a{
     width: 100%;
 }
 .content-client img{
-    opacity: 0;
+    opacity: 1;
+    /* opacity: 0;
     transform: translateX(-100%) , scale(0);
     -webkit-transform: translateX(-100%);
-    transition: all 1s ease;
+    transition: all 1s ease; */
 }
 
 /* hero image  */
@@ -218,6 +220,15 @@ ul li a{
     z-index: -1;
 }
 
+.attribution{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+}
 
 @media screen and (max-width:768px){
     :root{
