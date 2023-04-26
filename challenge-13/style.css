@@ -202,9 +202,9 @@ ul li a{
 }
 .content-client img{
     opacity: 1;
-    transform: translateX(-100%) , scale(0);
+/*     transform: translateX(-100%) , scale(0);
     -webkit-transform: translateX(-100%);
-    transition: all 1s ease;
+    transition: all 1s ease; */
 }
 
 /* hero image  */
