@@ -1,0 +1,189 @@
+/*
+     Global Fonts 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,900;1,700&display=swap');
+
+
+/* 
+    Global Varibles 
+*/
+:root{
+
+    /* colors  */
+    /* Primary */
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+    /* Neutral */
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    /* fonts families  */
+    --main-font-family:"Barlow";
+    --secondary-font-family:"Fraunces";
+
+    /* fonts sizes  */
+    --fs-hero-header:56px;
+    --fs-col-header:42px;
+    --fs-h4-text:18px;
+    --fs-h5-text:16px;
+    --fs-h6-text:14px;
+
+    /* fosnt weight  */
+    --fw-main-text :500;
+    --fw-hero-header-text :900;
+    --fw-col-header-text :900;
+    --fw-testimonial-header-text :700;
+    --fw-client-name-text :700;
+
+    /* spacing  */
+    --ls-hero-header : 0.2rem;
+    --ls-col-link : 0.03rem;
+    --ls-testimonial-header : 0.35rem;
+}
+
+/*
+    Reuse classes and elemnet style 
+*/
+*,::before,::after{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+ul li{
+    list-style-type: none;
+}
+a,a:active,a:hover{
+    text-decoration: none;
+    color: var(--grayish-blue);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col{
+    height: 100%;
+    width: 50%;
+}
+.col-text{
+    align-items: flex-start;
+    padding: 130px;
+}
+.card{
+    height: 400px;
+    width: 350px;
+}
+.img-col{
+    height: 100%;
+    width: 50%;
+}
+/*
+=================================
+*/
+
+/* 
+    custom css classes
+*/
+
+/* header section  */
+.header-section{
+    height: 50px;
+    width: 100%;
+    position: relative;
+    font-family: var(--main-font-family);
+    font-size: var(--fs-h4-text);
+    font-weight: var(--fw-main-text);
+}
+
+/* heros section  */
+.hero-section{
+    height: calc(100vh);
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.hero-section .hero-header{
+    height: 25%;
+    width: 100%;
+    font-family: var(--secondary-font-family);
+    font-size: var(--fs-hero-header);
+    font-weight: var(--fw-hero-header-text);
+    color: white;
+    text-align: center;
+}
+.hero-section .hero-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: url("images/desktop/image-header.jpg") no-repeat;
+    background-size: cover;
+    z-index: -1;
+    justify-content: center;
+    
+}
+.hero-section .hero-img .hero-down-arrow{
+    position: absolute;
+    top: 40%;
+
+}
+
+/* responsive design  */
+@media screen and (max-width:768px){
+    :root{
+        /* Typography */
+        /* fonts sizes  */
+        --fs-hero-header:26px;
+        --fs-col-header:26px;
+        --fs-h4-text:16px;
+        --fs-h5-text:14px;
+        --fs-h6-text:12px;
+    
+        /* spacing  */
+        --ls-hero-header : 0.18rem;
+        --ls-col-link : 0.03rem;
+        --ls-testimonial-header : 0.2rem;
+    }
+    /* header section  */
+    .header-section{
+        padding: 0 20px ;
+    }
+    .header-nav-list{
+        display: none;
+        height: 100vh;
+        width: 80%;
+        background-color: var(--white);
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 150px 40px;
+    }
+
+    /* hero section  */
+    .hero-section .hero-header{
+        height: 100%;
+    }
+
+    .hero-section .hero-img{
+        height: 100%;
+        width: 100%;
+        background: url("images/mobile/image-header.jpg") no-repeat;
+        background-size: contain;
+        z-index: -1;
+    }
+
+
+}
