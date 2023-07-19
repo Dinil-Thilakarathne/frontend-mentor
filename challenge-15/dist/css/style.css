@@ -96,7 +96,7 @@
   min-height: 75vh;
   height: fit-content;
   width: 50%;
-  background: url("//assets/images/illustration-sign-up-desktop.svg") no-repeat right;
+  background: url("../../assets/images/illustration-sign-up-desktop.svg") no-repeat right;
 }
 .container__image img {
   min-height: 100%;
@@ -181,7 +181,7 @@
     min-height: 0;
     height: 284px;
     width: 100%;
-    background: url("/assets/images/illustration-sign-up-mobile.svg") no-repeat center;
+    background: url("../../assets/images/illustration-sign-up-mobile.svg") no-repeat center;
     overflow: hidden;
   }
   .popup {
