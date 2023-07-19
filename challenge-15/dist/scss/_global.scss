@@ -1,0 +1,27 @@
+$clr-primary: hsl(4, 100%, 67%);
+$clr-neutral-400: hsl(234, 29%, 20%);
+$clr-neutral-300: hsl(235, 18%, 26%);
+$clr-neutral-200: hsl(231, 7%, 60%);
+$clr-neutral-100: hsl(0, 0%, 100%);
+
+// Typography 
+$ff-base : 'Roboto', sans-serif;
+
+$font-size: (
+    small : .85rem,
+    regular : 1.125rem,
+    medium : 1.5rem,
+    large : 2.5rem
+
+);
+
+$font-weight: (
+    regular : 400,
+    bold : 700
+);
+@mixin flex-box($flex-direction: row,$align-item: center, $justify-content: center){
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-item;
+    justify-content: $justify-content;
+}

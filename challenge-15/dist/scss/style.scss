@@ -1,0 +1,16 @@
+@import './global';
+@import './reset'; 
+@import './container';
+@import './popup';
+@import './responsive';
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $clr-neutral-300;
+    font-family: $ff-base;
+    overflow: hidden;
+}

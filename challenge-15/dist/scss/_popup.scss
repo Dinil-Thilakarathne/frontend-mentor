@@ -1,0 +1,58 @@
+.popup{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+
+    height: 350px;
+    width: 400px;
+    background-color: $clr-neutral-100;
+    border: none;
+    border-radius: 20px;
+    @include flex-box(column,flex-start,space-between);
+    row-gap: 10px;
+    padding: 40px;
+
+    &__icon{
+        height: 3rem;
+        aspect-ratio: 1;
+
+        & img{
+            max-width: 100%;
+        }
+    }
+
+    &__header{
+        font-size: map-get($font-size, large );
+        font-weight: map-get($font-weight, bold );
+    }
+
+    &__message{
+        font-size: map-get( $font-size, small );
+
+        & span{
+            font-weight: map-get($font-weight, bold );
+        }
+    }
+
+    &__cancel{
+        height: 2rem;
+        width: 100%;
+        background-color: $clr-neutral-400;
+        border: none;
+        border-radius: 5px;
+        color: $clr-neutral-100;
+        @include flex-box();
+        font-size: map-get($font-size, small );
+
+        &:hover{
+            background-color: $clr-primary;
+            cursor: pointer;
+        }
+    }
+
+
+
+    &.active{
+        visibility: visible;
+    }
+}

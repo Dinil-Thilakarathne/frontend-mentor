@@ -1,0 +1,41 @@
+@media (max-width:768px) {
+    .container{
+        min-height: 100vh;
+        max-width: 345px ;
+        padding: 0;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        row-gap: 20px;
+
+        &__content{
+            max-width: 345px;
+            padding: 0 10px;
+        }
+
+        &__image{
+            min-height: 0;
+            height: 284px;
+            width: 100%;
+            background: url('/assets/images/illustration-sign-up-mobile.svg') no-repeat center;
+            overflow: hidden;
+        }
+    }
+
+    .popup{
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        row-gap: 20px;
+        // position: relative;
+
+        &__cancel{
+            margin: 0 auto;
+            width: 80%;
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+
+}

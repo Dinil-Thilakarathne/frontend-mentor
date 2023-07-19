@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 70vh;
+  min-width: 900px;
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.container__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  row-gap: 20px;
+  font-size: 1.125rem;
+}
+.container__content .content-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.container__content .content-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 10px;
+  margin: 20px 0;
+}
+.container__content .content-list li {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.container__content .content-form-section {
+  width: 100%;
+}
+.container__content .content-form-section .input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 5px;
+  position: relative;
+}
+.container__content .content-form-section .input-section label, .container__content .content-form-section .input-section .error-message {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.container__content .content-form-section .input-section .email-input {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid hsl(235, 18%, 26%);
+  border-radius: 5px;
+  padding: 10px;
+}
+.container__content .content-form-section .input-section .error-message {
+  color: hsl(4, 100%, 67%);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.container__content .content-form-section .submit-btn {
+  width: 100%;
+  height: 3rem;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.container__content .content-form-section .submit-btn:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+.container__image {
+  min-height: 75vh;
+  height: fit-content;
+  width: 50%;
+  background: url("/assets/images/illustration-sign-up-desktop.svg") no-repeat right;
+}
+.container__image img {
+  min-height: 100%;
+  max-width: 100%;
+}
+.container.active {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+}
+
+.popup {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  height: 350px;
+  width: 400px;
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  row-gap: 10px;
+  padding: 40px;
+}
+.popup__icon {
+  height: 3rem;
+  aspect-ratio: 1;
+}
+.popup__icon img {
+  max-width: 100%;
+}
+.popup__header {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.popup__message {
+  font-size: 0.85rem;
+}
+.popup__message span {
+  font-weight: 700;
+}
+.popup__cancel {
+  height: 2rem;
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+.popup__cancel:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+.popup.active {
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-height: 100vh;
+    max-width: 345px;
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    row-gap: 20px;
+  }
+  .container__content {
+    max-width: 345px;
+    padding: 0 10px;
+  }
+  .container__image {
+    min-height: 0;
+    height: 284px;
+    width: 100%;
+    background: url("/assets/images/illustration-sign-up-mobile.svg") no-repeat center;
+    overflow: hidden;
+  }
+  .popup {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .popup__cancel {
+    margin: 0 auto;
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+  }
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
